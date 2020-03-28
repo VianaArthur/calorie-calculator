@@ -1,0 +1,5 @@
+#Igonore node modules 
+node_modules/
+
+# Ignore Mac Desktop Services files
+.DS_Store
