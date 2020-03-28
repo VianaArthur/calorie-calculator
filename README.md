@@ -1,2 +1,2 @@
 # calorie-calculator
- A Web Application Calorie Calculator
+ - A Web Application Calorie Calculator
