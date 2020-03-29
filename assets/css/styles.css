@@ -61,11 +61,6 @@ header {
   border-color: #fddb33;
 }
 
-.form-group input:invalid,
-.form-group select:invalid {
-  border-color: #ff7373;
-}
-
 .form-group button {
   background-image: linear-gradient(-90deg, #ff7373 0%, #fddb33 100%);
   border-radius: 5px;
@@ -109,6 +104,11 @@ header {
 
 .footer-container {
   text-align: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
 
 /* Chrome, Safari, Edge, Opera */
