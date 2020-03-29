@@ -63,4 +63,5 @@ function getCalorieResult(gender, age, weight, height, activityLevel) {
 
   const result = document.getElementById("result");
   result.innerHTML = layout;
+  result.scrollIntoView();
 }
