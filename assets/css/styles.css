@@ -61,6 +61,11 @@ header {
   border-color: #fddb33;
 }
 
+.form-group input:invalid:focus,
+.form-group select:invalid:focus {
+  border-color: #ff7373;
+}
+
 .form-group button {
   background-image: linear-gradient(-90deg, #ff7373 0%, #fddb33 100%);
   border-radius: 5px;
