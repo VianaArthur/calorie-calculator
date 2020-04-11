@@ -1,5 +1,6 @@
 const form = document.getElementById("form");
 form.addEventListener("submit", handleSubmit);
+form.addEventListener("reset", handleReset);
 
 function handleSubmit(event) {
   event.preventDefault();
@@ -13,6 +14,11 @@ function handleSubmit(event) {
   if (validateForm()) {
     getCalorieResult(gender, age, weight, height, activityLevel);
   }
+}
+
+function handleReset() {
+  const result = document.getElementById("result");
+  result.innerHTML = "";
 }
 
 function getSelectedValue(id) {
@@ -46,16 +52,16 @@ function getCalorieResult(gender, age, weight, height, activityLevel) {
     <div class="result-content">
         <ul>
             <li>
-            Your Basal Metabolic Rate is <strong> ${bmr} calories</strong>.
+            &bull; Your Basal Metabolic Rate is <strong> ${bmr} calories</strong>.
             </li>
             <li>
-            To maintain your weight, you need to consume on average <strong> ${maintenance} calories</strong>.
+            &bull; To maintain your weight, you need to consume on average <strong> ${maintenance} calories</strong>.
             </li>
             <li>
-            To loose weight, you need to consume on average<strong> ${loseWeight} calories</strong>.
+            &bull; To loose weight, you need to consume on average<strong> ${loseWeight} calories</strong>.
             </li>
             <li>
-            To gain weight, you need to consume on average<strong> ${gainWeight} calories</strong>.
+            &bull; To gain weight, you need to consume on average<strong> ${gainWeight} calories</strong>.
             </li>
         </ul>
     </div>

@@ -17,16 +17,18 @@ body {
 }
 
 .container {
-  width: 550px;
-  margin: 0 auto;
+  max-width: 550px;
+  margin: 0.5em auto;
+  padding: 0px 10px;
 }
 
 header {
   width: 100%;
-  height: 150px;
+  height: 5em;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-bottom: 5px;
 }
 
 .form-group {
@@ -66,19 +68,47 @@ header {
   border-color: #ff7373;
 }
 
-.form-group button {
-  background-image: linear-gradient(-90deg, #ff7373 0%, #fddb33 100%);
+.form-group-btn {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 25px 0;
+}
+
+.btn-submit,
+.btn-reset {
   border-radius: 5px;
   border: 0;
   height: 45px;
   color: #1a1a1a;
   font-size: 16px;
   font-family: "Montserrat Bold", sans-serif;
+  font-weight: 600;
+  width: 49%;
   cursor: pointer;
 }
 
+.btn-submit {
+  background: linear-gradient(-90deg, #ff7373 0%, #fddb33 100%);
+}
+
+.btn-reset {
+  background: linear-gradient(90deg, #ff7373 0%, #fddb33 100%);
+}
+
+.btn-submit:focus,
+.btn-reset:focus {
+  outline: none;
+  box-shadow: 0 0 6px #ff7373;
+}
+
+.btn-submit:hover,
+.btn-reset:hover {
+  background: #ff7373;
+}
+
 .form-group:last-child {
-  margin-top: 40px;
+  margin-top: 30px;
 }
 
 .result-container {
@@ -109,8 +139,7 @@ header {
 
 .footer-container {
   text-align: center;
-  width: 100%;
-  margin-top: 20px;
+  max-width: 100%;
 }
 
 img {
