@@ -75,11 +75,11 @@ header {
   margin: 25px 0;
 }
 
-.btn-submit,
-.btn-reset {
+.form-group-btn button {
   border-radius: 5px;
-  border: 0;
-  height: 45px;
+  border: none;
+  outline: none;
+  padding: 15px;
   color: #1a1a1a;
   font-size: 16px;
   font-family: "Montserrat Bold", sans-serif;
@@ -96,9 +96,8 @@ header {
   background: linear-gradient(90deg, #ff7373 0%, #fddb33 100%);
 }
 
-.btn-submit:focus,
-.btn-reset:focus {
-  outline: none;
+.btn-submit:active,
+.btn-reset:active {
   box-shadow: 0 0 6px #ff7373;
 }
 
